@@ -48,7 +48,7 @@ the Kali host out of the box:
 | Grace time should be limited | Failed |
 | Wrong maximum number of authentication attempts | Failed |
 
-*(screenshot: SCA results — all failed)*
+*(screenshot: before(all_failed).png*
 
 ### 2. SSH Hardening Applied (After)
 Modified `/etc/ssh/sshd_config` to fix all flagged checks:
@@ -61,7 +61,7 @@ Modified `/etc/ssh/sshd_config` to fix all flagged checks:
 
 **Result: 100% SCA score — 16 passed, 0 failed**
 
-*(screenshot: SCA dashboard showing 100% score)*
+*(screenshot: after(100%).png)*
 
 ### 3. Simulated SSH Brute-Force Attack
 **Attack:** Used Hydra to simulate 8 repeated SSH login attempts with
@@ -87,7 +87,7 @@ Threat Hunting dashboard at the exact time of the attack.
 | Authentication successes | 0 (attack failed) |
 | Detecting agent | kali |
 
-*(screenshot: Threat Hunting dashboard showing 26 auth failure spike)*
+*(screenshot: Threat Hunting dashboard (26 auth failures spike).png)*
 
 Alerts also confirmed directly in the manager's alerts log:
 ```
