@@ -61,8 +61,7 @@ Modified `/etc/ssh/sshd_config` to fix all flagged checks:
 
 **Result: 100% SCA score — 16 passed, 0 failed**
 
-![SCA after](screenshots/after(100%).png)
-
+![SCA after](screenshots/sca-after.png)
 ### 3. Simulated SSH Brute-Force Attack
 **Attack:** Used Hydra to simulate 8 repeated SSH login attempts with
 wrong passwords against the monitored Kali host (password auth
@@ -87,8 +86,7 @@ Threat Hunting dashboard at the exact time of the attack.
 | Authentication successes | 0 (attack failed) |
 | Detecting agent | kali |
 
-![SCA Threat Hunting dashboard](screenshots/Threat Hunting dashboard (26 auth failures spike).png)
-
+![Threat Hunting dashboard](screenshots/threat-hunting-alerts.png)
 Alerts also confirmed directly in the manager's alerts log:
 ```
 Failed password for treesups from 127.0.0.1 port 42620 ssh2
